@@ -1,5 +1,7 @@
 package com.example.crawling.controller;
 
+import com.example.crawling.Entity.Crawling;
+import com.example.crawling.dto.CrawlingResponseDto;
 import com.example.crawling.service.CrawlingService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +16,12 @@ public class CrawlingController {
     @GetMapping("/crawl")
     public void create() {
         crawlingService.crawl();
+    }
+
+    @GetMapping("/sendrecent")
+    public CrawlingResponseDto sendRecentData() {
+        Crawling crawling = crawlingService.getRecentData();
+        return new CrawlingResponseDto(crawling);
     }
 
 }

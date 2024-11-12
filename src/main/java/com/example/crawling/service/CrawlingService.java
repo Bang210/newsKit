@@ -71,4 +71,9 @@ public class CrawlingService {
             crawlingRepository.deleteAll(oldCrawlingList);
         }
     }
+
+    public Crawling getRecentData() {
+        Crawling crawling = crawlingRepository.findFirstByOrderByCreatedTimeDesc();
+        return crawling;
+    }
 }
