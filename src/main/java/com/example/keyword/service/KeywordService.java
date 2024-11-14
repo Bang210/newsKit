@@ -1,6 +1,7 @@
 package com.example.keyword.service;
 
 import com.example.keyword.dto.CrawlingResponseDto;
+import com.example.keyword.entity.Keyword;
 import com.example.keyword.repository.KeywordRepository;
 import lombok.RequiredArgsConstructor;
 import org.openkoreantext.processor.OpenKoreanTextProcessorJava;
@@ -8,6 +9,7 @@ import org.openkoreantext.processor.tokenizer.KoreanTokenizer;
 import org.springframework.stereotype.Service;
 import scala.collection.Seq;
 
+import java.time.LocalDateTime;
 import java.util.*;
 import java.util.regex.Pattern;
 
@@ -74,5 +76,24 @@ public class KeywordService {
         //추출된 키워드 확인
         System.out.println("키워드 확인");
         topKeywords.forEach(System.out::println);
+
+        create(crawlingId, topKeywords);
+    }
+
+    public void create(long crawlingId, List<String> topKeywords) {
+
+        Keyword keyword = new Keyword().toBuilder()
+                .crawlingId(crawlingId)
+                .keywordList(topKeywords)
+                .createdTime(LocalDateTime.now())
+                .build();
+
+        keywordRepository.save(keyword);
+    }
+
+    public List<String> showRecentTopKeywords() {
+        Keyword keyword = keywordRepository.findFirstByOrderByCreatedTimeDesc();
+        List<String> recentTopKeywords = keyword.getKeywordList();
+        return recentTopKeywords;
     }
 }

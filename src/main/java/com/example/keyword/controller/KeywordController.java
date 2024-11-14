@@ -16,9 +16,14 @@ public class KeywordController {
     private final CrawlingClient crawlingClient;
     private final KeywordService keywordService;
 
-    @GetMapping("/receiverecent")
+    @GetMapping("/requestRecent")
     public void receiveRecentData() {
         CrawlingResponseDto crawlingResponseDto = crawlingClient.receiveRecentData().getBody();
         keywordService.extractKeyword(crawlingResponseDto);
+    }
+
+    @GetMapping("/showRecent")
+    public List<String> showRecent() {
+        return keywordService.showRecentTopKeywords();
     }
 }
