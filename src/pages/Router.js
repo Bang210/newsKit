@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from '../components/layouts/Footer';
-import Home from "../pages/Home";
+import Home from "./Home";
 
 function Router() {
     return (
-        <div className='flex flex-col min-h-screen'>
+        <div className='min-h-screen'>
             <BrowserRouter>
                 <Routes>
                     <Route path="" element={<Home />} />
