@@ -5,6 +5,9 @@ function Router() {
     return (
         <div className='flex flex-col min-h-screen'>
             <BrowserRouter>
+                <Rooutes>
+                    <Home />
+                </Rooutes>
                 <Footer />
             </BrowserRouter>
         </div>
