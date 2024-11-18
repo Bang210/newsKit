@@ -21,11 +21,11 @@ public class ScheduledService {
     public void scheduledKeywordExtraction() {
         crawlingClient.crawl();
 
-        wait(10);
+        waitForSeconds(10);
 
         CrawlingResponseDto crawlingResponseDto = crawlingClient.receiveRecentData().getBody();
 
-        wait(10);
+        waitForSeconds(10);
 
         keywordService.extractKeyword(crawlingResponseDto);
 
@@ -37,7 +37,7 @@ public class ScheduledService {
         System.out.println(formattedDateTime);
     }
 
-    public void wait(int seconds) {
+    public void waitForSeconds(int seconds) {
 
         try {
             // 10초 대기
