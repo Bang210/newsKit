@@ -1,7 +1,7 @@
 
 
 const Home = () => {
-
+<div>Hello nesKit</div>
 
 };
 
