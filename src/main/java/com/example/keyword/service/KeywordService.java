@@ -96,4 +96,12 @@ public class KeywordService {
         List<String> recentTopKeywords = keyword.getKeywordList();
         return recentTopKeywords;
     }
+
+    public Keyword getRecentData() {
+        try {
+            return keywordRepository.findFirstByOrderByCreatedTimeDesc();
+        } catch (Exception e) {
+            return null;
+        }
+    }
 }
