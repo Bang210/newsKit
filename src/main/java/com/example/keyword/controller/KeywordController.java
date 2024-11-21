@@ -7,9 +7,7 @@ import com.example.keyword.dto.KeywordResponseDto;
 import com.example.keyword.entity.Keyword;
 import com.example.keyword.service.KeywordService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -39,9 +37,12 @@ public class KeywordController {
                     .keywordList(keyword.getKeywordList())
                     .createdTime(keyword.getCreatedTime())
                     .build();
-
+            System.out.println("data sent");
             return GlobalResponse.of("200", "response success", keywordResponseDto);
         }
-        else return GlobalResponse.of("404", "data not found");
+        else {
+            System.out.println("failed");
+            return GlobalResponse.of("404", "data not found");
+        }
     }
 }

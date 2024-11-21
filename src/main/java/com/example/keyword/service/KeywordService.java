@@ -51,7 +51,8 @@ public class KeywordService {
                 "언론","판결","입장","발표","직접", "대통령", "충격", "수사", "가족", "향년", "발견", "폭행",
                 "수사", "벌금", "통과", "국회", "선고", "확정", "여사", "조사", "추천", "금융", "회장",
                 "의원", "작년", "사진", "구속", "조카", "부인", "거부", "처리", "책임", "문제", "유죄", "귀국",
-                "여성", "남성", "포토", "살해", "법원", "종합", "해결", "이슈"));
+                "여성", "남성", "포토", "살해", "법원", "종합", "해결", "이슈", "중단", "기자", "논의", "구형",
+                "발부"));
 
         Pattern hangulPattern = Pattern.compile("^[가-힣]+$");
 
@@ -66,10 +67,10 @@ public class KeywordService {
             frequencyMap.put(noun, frequencyMap.getOrDefault(noun, 0) + 1);
         }
 
-        //빈도수 상위 20개 키워드 추출
+        //빈도수 상위 10개 키워드 추출
         List<String> topKeywords = frequencyMap.entrySet().stream()
                 .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
-                .limit(20)
+                .limit(10)
                 .map(Map.Entry::getKey)
                 .toList();
 
