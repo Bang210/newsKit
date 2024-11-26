@@ -18,7 +18,7 @@ public class CrawlingService {
     private final CrawlingRepository crawlingRepository;
 
     //window size
-    private final long WINDOW_SIZE = 10;
+    private final long WINDOW_SIZE = 200;
 
     //네이버 뉴스스탠드 언론사 id
     List<String> pressIdList = List.of("081", "055", "018", "057", "032", "368", "028", "015", "029", "025",
@@ -73,7 +73,38 @@ public class CrawlingService {
     }
 
     public Crawling getRecentData() {
-        Crawling crawling = crawlingRepository.findFirstByOrderByCreatedTimeDesc();
-        return crawling;
+        return crawlingRepository.findFirstByKeywordIsNullOrderByCreatedTimeDesc();
     }
+
+    public void crawlWithKeyword(String keyword) {
+
+        String url = "https://search.naver.com/search.naver?where=news&query=%s".formatted(keyword);
+
+        StringBuilder textData = new StringBuilder();
+
+        try {
+            //데이터 크롤링
+            Document document = Jsoup.connect(url).get();
+            //텍스트 추출
+            String text = document.text();
+            //스트링빌더에 추가
+            textData.append(text).append("\n");
+        } catch (IOException e) {
+            //예외처리
+            e.printStackTrace();
+        }
+
+        Crawling crawling = Crawling.builder()
+                .keyword(keyword)
+                .rawData(textData.toString())
+                .createdTime(LocalDateTime.now())
+                .build();
+
+        crawlingRepository.save(crawling);
+    }
+
+    public Crawling getRecentDataWithKeyword(String keyword) {
+        return crawlingRepository.findFirstByKeywordEqualsOrderByCreatedTimeDesc(keyword);
+    }
+
 }

@@ -16,6 +16,9 @@ import java.time.LocalDateTime;
 @SuperBuilder(toBuilder = true)
 public class Crawling {
 
+    @Column
+    String keyword;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column

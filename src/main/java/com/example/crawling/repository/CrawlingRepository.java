@@ -14,5 +14,7 @@ public interface CrawlingRepository extends JpaRepository<Crawling, Long> {
     @Query(value = "SELECT c FROM Crawling c ORDER BY c.createdTime ASC")
     List<Crawling> findOldestCrawling(@Param("num") long num);
 
-    Crawling findFirstByOrderByCreatedTimeDesc();
+    Crawling findFirstByKeywordIsNullOrderByCreatedTimeDesc();
+
+    Crawling findFirstByKeywordEqualsOrderByCreatedTimeDesc(String keyword);
 }
