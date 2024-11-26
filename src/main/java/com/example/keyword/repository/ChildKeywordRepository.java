@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ChildKeywordRepository extends JpaRepository<ChildKeyword, Long> {
+    ChildKeyword findFirstByParentKeywordEqualsOrderByCreatedTimeDesc(String parentKeyword);
 }

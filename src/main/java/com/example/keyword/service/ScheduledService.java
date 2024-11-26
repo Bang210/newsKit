@@ -2,32 +2,52 @@ package com.example.keyword.service;
 
 import com.example.keyword.client.CrawlingClient;
 import com.example.keyword.dto.CrawlingResponseDto;
+import com.example.keyword.entity.Keyword;
+import com.example.keyword.repository.KeywordRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
 public class ScheduledService {
 
     private final KeywordService keywordService;
+    private final KeywordRepository keywordRepository;
     private final CrawlingClient crawlingClient;
 
     //30분마다 실행
     @Scheduled(cron = "0 0/30 6-23 * * *")
     public void scheduledKeywordExtraction() {
+
+        //부모키워드 생성
         crawlingClient.crawl();
 
-        waitForSeconds(10);
+        waitForSeconds(5);
 
         CrawlingResponseDto crawlingResponseDto = crawlingClient.receiveRecentData().getBody();
 
-        waitForSeconds(10);
 
         keywordService.extractKeyword(crawlingResponseDto);
+
+
+        //자식키워드 생성
+        Keyword keyword = keywordService.getRecentData();
+
+        List<String> keywordList = keyword.getKeywordList();
+
+        for (String parentKeyword : keywordList) {
+            crawlingClient.crawlWithKeyword(parentKeyword);
+
+            waitForSeconds(5);
+
+            CrawlingResponseDto childCrawlingDto = crawlingClient.receiveChildData(parentKeyword).getBody();
+            keywordService.extractChildKeyword(childCrawlingDto, parentKeyword);
+        }
 
         //실행 확인
         System.out.println("실행된 시간:");

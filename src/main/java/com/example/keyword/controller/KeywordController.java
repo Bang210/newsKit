@@ -4,8 +4,10 @@ import com.example.global.response.GlobalResponse;
 import com.example.keyword.client.CrawlingClient;
 import com.example.keyword.dto.CrawlingResponseDto;
 import com.example.keyword.dto.KeywordResponseDto;
+import com.example.keyword.entity.ChildKeyword;
 import com.example.keyword.entity.Keyword;
 import com.example.keyword.service.KeywordService;
+import com.example.keyword.service.ScheduledService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,6 +20,7 @@ public class KeywordController {
     private final CrawlingClient crawlingClient;
     private final KeywordService keywordService;
 
+    //부모 키워드 생성
     @GetMapping("/requestRecent")
     public void receiveRecentData() {
         CrawlingResponseDto crawlingResponseDto = crawlingClient.receiveRecentData().getBody();
@@ -29,6 +32,7 @@ public class KeywordController {
         return keywordService.showRecentTopKeywords();
     }
 
+    //클라이언트 앱으로 부모키워드 전송
     @PostMapping("/dataRequest")
     public GlobalResponse response() {
         Keyword keyword = keywordService.getRecentData();
@@ -42,6 +46,21 @@ public class KeywordController {
         }
         else {
             System.out.println("failed");
+            return GlobalResponse.of("404", "data not found");
+        }
+    }
+
+    //클라이언트 앱으로 자식키워드 전송
+    @PostMapping("/dataRequest/{parentKeyword}")
+    public GlobalResponse responseFromKeyword(@PathVariable String parentKeyword) {
+        ChildKeyword childKeyword = keywordService.getRecentChildKeywords(parentKeyword);
+        if (childKeyword != null) {
+            KeywordResponseDto keywordResponseDto = new KeywordResponseDto().toBuilder()
+                    .keywordList(childKeyword.getChildKeywordList())
+                    .createdTime(childKeyword.getCreatedTime())
+                    .build();
+            return GlobalResponse.of("200", "response success", keywordResponseDto);
+        } else {
             return GlobalResponse.of("404", "data not found");
         }
     }

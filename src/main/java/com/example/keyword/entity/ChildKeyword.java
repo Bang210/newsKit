@@ -25,7 +25,7 @@ public class ChildKeyword {
     private long id;
 
     @Column
-    private String motherKeyword;
+    private String parentKeyword;
 
     @Column
     @ElementCollection
