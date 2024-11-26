@@ -26,6 +26,7 @@ public class CrawlingController {
     @PostMapping("/crawl/{keyword}")
     public void createWithKeyword(@PathVariable String keyword) {
         crawlingService.crawlWithKeyword(keyword);
+        System.out.println(keyword);
     }
 
     @GetMapping("/sendrecent/{keyword}")
