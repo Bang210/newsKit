@@ -35,7 +35,6 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    // 첫 번째 키워드의 자식 키워드를 자동으로 불러오기
     if (keywords.length > 0) {
       fetchChildKeywords(keywords[0]);
     }
