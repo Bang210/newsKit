@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faL } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
   const [keywords, setKeywords] = useState([]);
@@ -9,10 +7,12 @@ const Home = () => {
   const [createdTime, setCreatedTime] = useState(null);
   const [childKeywords, setChildKeywords] = useState({}); // 각 키워드에 대한 자식 키워드를 저장할 객체
 
+  const apiUrl = process.env.REACT_APP_CORE_API_BASE_URL;
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:8080/keyword/dataRequest', {
+        const response = await fetch(`${apiUrl}/keyword/dataRequest`, {
           method: 'POST',
           credentials: 'include',
         });
@@ -44,7 +44,7 @@ const Home = () => {
   const fetchChildKeywords = async (keyword) => {
     if (childKeywords[keyword]) return; // 이미 불러온 경우
     try {
-      const response = await fetch(`http://localhost:8080/keyword/dataRequest/${keyword}`, {
+      const response = await fetch(`${apiUrl}}/keyword/dataRequest/${keyword}`, {
         method: 'POST',
         credentials: 'include',
       });
