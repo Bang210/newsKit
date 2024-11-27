@@ -5,7 +5,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [createdTime, setCreatedTime] = useState(null);
-  const [childKeywords, setChildKeywords] = useState({}); // 각 키워드에 대한 자식 키워드를 저장할 객체
+  const [childKeywords, setChildKeywords] = useState({});
 
   const apiUrl = process.env.REACT_APP_CORE_API_BASE_URL;
 
