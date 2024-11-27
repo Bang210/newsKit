@@ -7,6 +7,7 @@ import com.example.keyword.repository.KeywordRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -21,13 +22,14 @@ public class ScheduledService {
     private final CrawlingClient crawlingClient;
 
     //30분마다 실행
+    @Transactional
     @Scheduled(cron = "0 0/30 6-23 * * *")
     public void scheduledKeywordExtraction() {
 
         //부모키워드 생성
         crawlingClient.crawl();
 
-        waitForSeconds(5);
+        waitForSeconds(1);
 
         CrawlingResponseDto crawlingResponseDto = crawlingClient.receiveRecentData().getBody();
 
@@ -43,7 +45,7 @@ public class ScheduledService {
         for (String parentKeyword : keywordList) {
             crawlingClient.crawlWithKeyword(parentKeyword);
 
-            waitForSeconds(5);
+            waitForSeconds(2);
 
             CrawlingResponseDto childCrawlingDto = crawlingClient.receiveChildData(parentKeyword).getBody();
             keywordService.extractChildKeyword(childCrawlingDto, parentKeyword);
@@ -60,7 +62,6 @@ public class ScheduledService {
     public void waitForSeconds(int seconds) {
 
         try {
-            // 10초 대기
             Thread.sleep(seconds * 1000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt(); // 인터럽트 상태 복원

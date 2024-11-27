@@ -19,6 +19,7 @@ public class KeywordController {
 
     private final CrawlingClient crawlingClient;
     private final KeywordService keywordService;
+    private final ScheduledService scheduledService;
 
     //부모 키워드 생성
     @GetMapping("/requestRecent")
@@ -63,5 +64,10 @@ public class KeywordController {
         } else {
             return GlobalResponse.of("404", "data not found");
         }
+    }
+
+    @GetMapping("/manual")
+    public void manual() {
+        scheduledService.scheduledKeywordExtraction();
     }
 }
