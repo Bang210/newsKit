@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: dev
   application:
     name: crawling-server
   jpa:
@@ -10,20 +12,7 @@ spring:
         format_sql: true
         highlight_sql: true
         use_sql_comments: true
-  h2:
-    console:
-      enabled: true
-  datasource:
-    url: jdbc:h2:./demo_dev;MODE=MYSQL
-    username: newskit
-    password:
-    driver-class-name: org.h2.Driver
-  output:
-    ansi:
-      enabled: always
 
-server:
-  port: 8081
 
 ## Eureka Client
 eureka:
