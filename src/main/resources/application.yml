@@ -4,11 +4,7 @@ spring:
   profiles:
     active: dev
 
-
-server:
-  port: 8761
-
-
+## Eureka client
 eureka:
   client:
     register-with-eureka: false
