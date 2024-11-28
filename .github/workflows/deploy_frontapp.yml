@@ -58,7 +58,7 @@ jobs:
           ${{ secrets.DOT_ENV }}
           EOF
         shell: bash
-      - name: 빌드 앤 푸시
+      - name: 빌드 앤 푸시.
         uses: docker/build-push-action@v5
         with:
           context: .
