@@ -62,6 +62,7 @@ dependencies {
 	implementation 'org.scala-lang:scala-library:2.12.4'
 	implementation 'com.twitter.penguin:korean-text:4.4.4'
 
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 }
 
