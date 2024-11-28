@@ -12,7 +12,7 @@ COPY gradle gradle
 COPY build.gradle .
 COPY settings.gradle .
 
-# Gradle 래퍼에 실행 권한 부여
+# Gradle 래퍼에 실행 권한 부여/
 RUN chmod +x ./gradlew
 
 # 의존성 설치
