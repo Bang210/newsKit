@@ -6,7 +6,7 @@ FROM ghcr.io/graalvm/graalvm-community:17 AS builder
 # 작업 디렉토리 설정
 WORKDIR /app
 
-# Gradle 래퍼 복사
+# Gradle 래퍼 복사/
 COPY gradlew .
 COPY gradle gradle
 COPY build.gradle .
