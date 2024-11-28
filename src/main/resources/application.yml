@@ -29,7 +29,7 @@ spring:
           '[/**]':
             allowedOrigins:
               - http://localhost:3000
-              - http://172.17.0.1:3000
+              - https://newskit.js-kdd.site
             allowedMethods:
               - GET
               - POST
