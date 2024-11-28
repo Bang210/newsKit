@@ -17,6 +17,12 @@ jobs:
       tag_name: ${{ steps.create_tag.outputs.new_tag }}
     steps:
       - uses: actions/checkout@v4
+      - name: Get Previous Tag
+        id: get_previous_tag
+        run: |
+          git fetch --tags
+          TAG=$(git tag --sort=-creatordate | head -n 1)
+          echo "TAG=${TAG:-v0.0.0}" >> $GITHUB_ENV
       - name: Create Tag
         id: create_tag
         uses: mathieudutour/github-tag-action@v6.1
@@ -24,7 +30,9 @@ jobs:
           github_token: ${{ secrets.ACCESS_GITHUB_TOKEN }}
           default_bump: patch
           tag_prefix: v
-          previous_tag: v0.0.0
+          commit_sha: ${{ github.sha }}
+          # 이전 태그는 환경 변수로 설정
+          fetch_all_tags: true
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
