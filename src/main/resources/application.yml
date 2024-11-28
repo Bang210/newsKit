@@ -4,8 +4,6 @@ server:
 spring:
   application:
     name: gateway-server
-  profiles:
-    active: dev
   cloud:
     gateway:
       routes:
@@ -31,6 +29,7 @@ spring:
           '[/**]':
             allowedOrigins:
               - http://localhost:3000
+              - http://172.17.0.1:3000
             allowedMethods:
               - GET
               - POST
