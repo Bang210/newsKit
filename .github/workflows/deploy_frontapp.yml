@@ -2,7 +2,7 @@ name: deployFrontapp
 on:
   push:
     paths:
-      - '.github/workflows/deploy_client.yml'
+      - '.github/workflows/deploy_frontapp.yml'
       - 'Dockerfile'
       - 'src/**'
       - 'package.json'
