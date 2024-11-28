@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: dev
   application:
     name: keyword-server
   jpa:
@@ -21,9 +23,6 @@ spring:
   output:
     ansi:
       enabled: always
-
-server:
-  port: 8082
 
 ## Eureka Client
 eureka:
