@@ -1,6 +1,6 @@
 # DOCKER RUN : 기존의 작업 내역에 변경이 없으면 캐싱된 내역으로 대체
 # 멀티 스테이지 1 : 빌드 스테이지
-# GraalVm을 기반 이미지로
+# GraalVm을 기반 이미지로 사용
 FROM ghcr.io/graalvm/graalvm-community:17 AS builder
 
 # 작업 디렉토리 설정
