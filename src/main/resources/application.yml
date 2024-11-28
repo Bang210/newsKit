@@ -1,8 +1,6 @@
 spring:
   application:
     name: discovery-server
-  profiles:
-    active: dev
 
 ## Eureka client
 eureka:
