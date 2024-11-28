@@ -41,7 +41,7 @@ const Home = () => {
   }, [keywords]); // keywords가 변경될 때마다 실행
 
   const fetchChildKeywords = async (keyword) => {
-    if (childKeywords[keyword]) return; // 이미 불러온 경우
+    if (childKeywords[keyword]) return; // 이미 불러온 경우 다시 불러오지 않음
     try {
       const response = await fetch(`${apiUrl}}/keyword/dataRequest/${keyword}`, {
         method: 'POST',
