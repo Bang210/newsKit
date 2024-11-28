@@ -9,7 +9,7 @@ on:
       - 'package-lock.json'
 
     branches:
-      - deploy_frontapp
+      - frontapp_deploy
 jobs:
   makeTagAndRelease:
     runs-on: ubuntu-latest
