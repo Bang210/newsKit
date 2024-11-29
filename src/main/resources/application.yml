@@ -5,8 +5,6 @@ spring:
   application:
     name: gateway-server
   cloud:
-    client:
-      hostname: ${spring.cloud.client.hostname}
     discovery:
       enabled: true
     gateway:
