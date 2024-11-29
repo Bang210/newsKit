@@ -1,6 +1,9 @@
 server:
   port: 8081
 spring:
+  cloud:
+    discovery:
+      enabled: true
   application:
     name: crawling-server
   jpa:
