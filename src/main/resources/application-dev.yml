@@ -1,5 +1,3 @@
-server:
-  port: 8082
 spring:
   h2:
     console:
@@ -12,3 +10,13 @@ spring:
   output:
     ansi:
       enabled: always
+
+## Eureka Client
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.instance_id:${random.value}}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
