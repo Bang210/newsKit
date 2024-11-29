@@ -6,10 +6,10 @@ eureka:
   instance:
     prefer-ip-address: true
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
-      defaultZone: http://172.17.0.1:8761/eureka/
+      defaultZone: https://discovery.js-kdd.site/eureka/
   server:
     enable-self-preservation: true
 
