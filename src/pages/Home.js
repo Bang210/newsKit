@@ -43,7 +43,7 @@ const Home = () => {
   const fetchChildKeywords = async (keyword) => {
     if (childKeywords[keyword]) return; // 이미 불러온 경우
     try {
-      const response = await fetch(`${apiUrl}}/keyword/dataRequest/${keyword}`, {
+      const response = await fetch(`${apiUrl}/keyword/dataRequest/${keyword}`, {
         method: 'POST',
         credentials: 'include',
       });
