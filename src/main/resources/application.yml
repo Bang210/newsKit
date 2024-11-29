@@ -10,6 +10,9 @@ spring:
     discovery:
       enabled: true
     gateway:
+      discovery:
+        locator:
+          enabled: true
       routes:
         - id: crawling_route
           uri: lb://crawling-server
