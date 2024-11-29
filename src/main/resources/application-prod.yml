@@ -4,7 +4,5 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: https://discovery.js-kdd.site/eureka
-
-logging:
-  level:
-    io.netty.resolver.dns: DEBUG
+  instance:
+    prefer-ip-address: true
