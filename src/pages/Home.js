@@ -107,7 +107,7 @@ const Home = () => {
               </div>
               <div className="collapse-content">
                 {childKeywords[keyword] ? (
-                  <ul>
+                  <ul className='flex flex-wrap gap-2'>
                     {childKeywords[keyword].map((childKeyword, idx) => (
                       <li key={idx} className='bg-gray-300 px-3 rounded-md py-1 ml-3 inline'>#{childKeyword}</li>
                     ))}
