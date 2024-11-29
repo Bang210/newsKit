@@ -1,6 +1,9 @@
 server:
   port: 8082
 spring:
+  cloud:
+    discovery:
+      enabled: true
   application:
     name: keyword-server
   jpa:
