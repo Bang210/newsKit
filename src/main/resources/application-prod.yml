@@ -6,3 +6,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://172.17.0.1:8761/eureka
+
+logging:
+  level:
+    io.netty.resolver.dns: DEBUG
