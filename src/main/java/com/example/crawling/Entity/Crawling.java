@@ -24,7 +24,7 @@ public class Crawling {
     @Column
     private long id;
 
-    @Column(length = 50000)
+    @Column(columnDefinition = "MEDIUMTEXT")
     private String rawData;
 
     @CreatedDate
