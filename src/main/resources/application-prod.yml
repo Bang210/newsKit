@@ -24,3 +24,5 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: https://discovery.js-kdd.site/eureka
+  instance:
+    prefer-ip-address: true
