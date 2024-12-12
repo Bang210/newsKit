@@ -78,7 +78,7 @@ public class CrawlingService {
 
     public void crawlWithKeyword(String keyword) {
 
-        String url = "https://search.naver.com/search.naver?where=news&query=%s".formatted(keyword);
+        String url = "https://search.naver.com/search.naver?where=news&query=%s&sort=1".formatted(keyword);
 
         StringBuilder textData = new StringBuilder();
 
