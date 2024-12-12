@@ -45,7 +45,7 @@ public class ScheduledService {
         for (String parentKeyword : keywordList) {
             crawlingClient.crawlWithKeyword(parentKeyword);
 
-            waitForSeconds(2);
+            waitForSeconds(1);
 
             CrawlingResponseDto childCrawlingDto = crawlingClient.receiveChildData(parentKeyword).getBody();
             keywordService.extractChildKeyword(childCrawlingDto, parentKeyword);
