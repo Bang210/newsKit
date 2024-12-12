@@ -67,7 +67,8 @@ public class KeywordController {
     }
 
     @GetMapping("/manual")
-    public void manual() {
+    public String manual() {
         scheduledService.scheduledKeywordExtraction();
+        return "done";
     }
 }
