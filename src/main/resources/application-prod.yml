@@ -9,7 +9,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: https://discovery.js-kdd.site/eureka/
+      defaultZone: https://discovery.jinsol.my/eureka/
   server:
     enable-self-preservation: true
 
