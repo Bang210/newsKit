@@ -32,7 +32,7 @@ spring:
           '[/**]':
             allowedOrigins:
               - http://localhost:3000
-              - https://newskit.js-kdd.site
+              - https://newskit.jinsol.my
             allowedMethods:
               - GET
               - POST
