@@ -38,7 +38,7 @@ const Home = () => {
     if (keywords.length > 0) {
       fetchChildKeywords(keywords[0]);
     }
-  }, [keywords]); // keywords가 변경될 때마다 실행
+  }, [keywords]); //keywords가 변경될 때마다 실행
 
   const fetchChildKeywords = async (keyword) => {
     if (childKeywords[keyword]) return; // 이미 불러온 경우
