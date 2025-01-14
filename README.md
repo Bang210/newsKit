@@ -14,3 +14,13 @@ Gateway, Discovery, Crawling, Keyword 총 5개의 어플리케이션으로 구�
 
 ### 2. 키워드 생성
 ![image](https://github.com/user-attachments/assets/06dfc9b0-b5f6-4264-a7e8-d29ce8e65108)
+
+# 개발 목표
+[x] MSA 아키텍쳐 구현
+[x] Keyword CRUD
+[x] 스케쥴러를 통한 데이터 생성 자동화
+[x] 뷰 구현
+[x] Github Action / AWS EC2(LINUX, DOCKER)를 통해 CI/CD 구축
+
+# 배포주소
+https://newskit.jinsol.my
