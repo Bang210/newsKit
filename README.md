@@ -9,4 +9,8 @@ Gateway, Discovery, Crawling, Keyword 총 5개의 어플리케이션으로 구�
 
 
 # 서비스 흐름
+### 1. 데이터 크롤링
+![image](https://github.com/user-attachments/assets/c9ddbe92-da8e-458a-830d-4e9154ea0483)
 
+### 2. 키워드 생성
+![image](https://github.com/user-attachments/assets/06dfc9b0-b5f6-4264-a7e8-d29ce8e65108)
