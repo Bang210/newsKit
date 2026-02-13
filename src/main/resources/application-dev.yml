@@ -10,7 +10,6 @@ spring:
   output:
     ansi:
       enabled: always
-
 ## Eureka Client
 eureka:
   instance:
