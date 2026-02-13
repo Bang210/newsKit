@@ -26,6 +26,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: https://bangvelope.com/newskit-discovery/eureka
+      defaultZone: http://host.docker.internal:8761/eureka
   instance:
     prefer-ip-address: true
