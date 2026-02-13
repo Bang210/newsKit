@@ -17,7 +17,6 @@ spring:
       org.hibernate.orm.jdbc.extract: INFO
       org.springframework.transaction.interceptor: INFO
 
-
 ## Eureka Client
 eureka:
   client:
