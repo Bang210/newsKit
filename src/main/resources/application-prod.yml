@@ -3,7 +3,7 @@ server:
   port: 18082
 spring:
   datasource:
-    url: jdbc:mysql://172.17.0.1:3306/newskit_keyword
+    url: jdbc:mysql://host.docker.internal:3306/newskit_keyword
     username: userlocal
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
