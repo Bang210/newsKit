@@ -1,0 +1,246 @@
+*   [33md32d8b4[m[33m ([m[1;31morigin/crawling_deploy[m[33m)[m Merge pull request #51 from Bang210/crawling
+[31m|[m[32m\[m  
+[31m|[m * [33m96f862c[m[33m ([m[1;36mHEAD -> [m[1;32mcrawling[m[33m, [m[1;31morigin/crawling[m[33m)[m refactor: github actions
+* [32m|[m [33m2766a59[m Merge pull request #50 from Bang210/crawling
+[33m|[m[32m\[m[32m|[m 
+[33m|[m * [33m87e5bf9[m refactor: github actions
+* [34m|[m [33medf63b3[m Merge pull request #49 from Bang210/crawling
+[35m|[m[34m\[m[34m|[m 
+[35m|[m * [33m90bd91a[m work
+* [36m|[m [33md138034[m Merge pull request #48 from Bang210/crawling
+[1;31m|[m[36m\[m[36m|[m 
+[1;31m|[m * [33m59aa1c2[m refactor: deploy settings
+* [1;32m|[m [33mf34fc72[m[33m ([m[1;33mtag: v0.0.46-crawling-deploy.0[m[33m)[m Merge pull request #44 from Bang210/crawling
+[1;33m|[m[1;32m\[m[1;32m|[m 
+[1;33m|[m * [33mfd42ea7[m[33m ([m[1;33mtag: v0.0.45[m[33m, [m[1;33mtag: v0.0.44[m[33m)[m refactor: change domain
+[1;33m|[m[1;33m/[m  
+*   [33m7d4d8a3[m[33m ([m[1;33mtag: v0.0.41-crawling-deploy.0[m[33m)[m Merge pull request #40 from Bang210/crawling
+[1;35m|[m[1;36m\[m  
+[1;35m|[m * [33m1ea9e47[m[33m ([m[1;33mtag: v0.0.40[m[33m, [m[1;33mtag: v0.0.33[m[33m)[m refactor: crawl with keyword sorted by recent
+[1;35m|[m[1;35m/[m  
+*   [33m592d711[m[33m ([m[1;33mtag: v0.0.33-crawling-deploy.0[m[33m)[m Merge pull request #39 from Bang210/crawling
+[31m|[m[32m\[m  
+[31m|[m * [33m5031e7a[m[33m ([m[1;33mtag: v0.0.32[m[33m)[m fix: datatype mediumtext for rawdata
+* [32m|[m [33m657aedb[m[33m ([m[1;33mtag: v0.0.32-crawling-deploy.0[m[33m)[m Merge pull request #38 from Bang210/crawling
+[33m|[m[32m\[m[32m|[m 
+[33m|[m * [33m1c2d72e[m[33m ([m[1;33mtag: v0.0.31[m[33m)[m work
+* [34m|[m [33m9b6d7c5[m[33m ([m[1;33mtag: v0.0.29-crawling-deploy.0[m[33m)[m Merge pull request #35 from Bang210/crawling
+[35m|[m[34m\[m[34m|[m 
+[35m|[m * [33m1b69455[m[33m ([m[1;33mtag: v0.0.28[m[33m)[m work
+* [36m|[m [33m6c206a5[m[33m ([m[1;33mtag: v0.0.26-crawling-deploy.0[m[33m)[m Merge pull request #31 from Bang210/crawling
+[1;31m|[m[36m\[m[36m|[m 
+[1;31m|[m * [33m46a59be[m[33m ([m[1;33mtag: v0.0.25[m[33m)[m work
+* [1;32m|[m [33m44c1ddf[m[33m ([m[1;33mtag: v0.0.19-crawling-deploy.0[m[33m)[m Merge pull request #24 from Bang210/crawling
+[1;33m|[m[1;32m\[m[1;32m|[m 
+[1;33m|[m * [33m0ab41c2[m[33m ([m[1;33mtag: v0.0.18[m[33m)[m work
+* [1;34m|[m [33mfa3045f[m[33m ([m[1;33mtag: v0.0.14-crawling-deploy.0[m[33m)[m Merge pull request #16 from Bang210/crawling
+[1;35m|[m[1;34m\[m[1;34m|[m 
+[1;35m|[m * [33me59cf9b[m[33m ([m[1;33mtag: v0.0.13[m[33m)[m fix: profile settings
+[1;35m|[m[1;35m/[m  
+*   [33me1fd429[m[33m ([m[1;33mtag: v0.0.11-crawling-deploy.0[m[33m)[m Merge pull request #14 from Bang210/crawling
+[31m|[m[32m\[m  
+[31m|[m * [33m4f404a9[m fix: profiles
+[31m|[m[31m/[m  
+*   [33md39441b[m[33m ([m[1;33mtag: v0.0.3-crawling-deploy.0[m[33m, [m[1;33mtag: v0.0.10[m[33m, [m[1;32mcrawling_deploy[m[33m)[m Merge pull request #4 from Bang210/crawling
+[33m|[m[34m\[m  
+[33m|[m * [33m8b8b2d0[m work
+* [34m|[m [33m04ecb49[m Merge pull request #3 from Bang210/crawling
+[35m|[m[34m\[m[34m|[m 
+[35m|[m * [33mb6d2066[m[33m ([m[1;33mtag: v0.0.2[m[33m, [m[1;33mtag: v0.0.1[m[33m)[m work
+[35m|[m[35m/[m  
+* [33m9672edc[m Dockerfile
+*   [33mf460971[m Merge branch 'crawling' of https://github.com/Bang210/newsKit into crawling
+[1;31m|[m[1;32m\[m  
+[1;31m|[m * [33m2c450c6[m Create deploy_crawling_server.yml
+* [1;32m|[m [33m0f96836[m application settings
+[1;32m|[m[1;32m/[m  
+* [33ma142500[m feat: child data crawling
+* [33m9e6fb66[m feat: crawling data with parent  keyword
+* [33ma427f4d[m feat: add annotation for feign
+* [33m239efb7[m feat: create SendRecentData
+* [33m6434c8d[m feat: create crawlingResponseDto
+* [33m3526d40[m feat: add db to gitignore
+* [33m800f6b6[m feat: create crawling creation
+* [33m06d9f41[m feat: create crawlingRepository
+* [33m9d8cc8f[m feat: create crawlingController, crawlingService
+* [33m1fefb70[m feat: create Crawling Entity
+* [33m5b1f3e8[m feat: add eureka settings
+* [33med44e88[m feat: application settings
+* [33mc673a6a[m feat: application settings
+* [33mf54d5a1[m feat: add annotation for Discovery client
+* [33m2957def[m feat: build.gradle
+* [33m0c0abbd[m init crawling
+*   [33mef44b9d[m[33m ([m[1;33mtag: v0.1.0-discovery-deploy.3[m[33m, [m[1;31morigin/discovery_deploy[m[33m)[m Merge pull request #47 from Bang210/discovery
+[1;33m|[m[1;34m\[m  
+[1;33m|[m * [33m237be8c[m[33m ([m[1;31morigin/discovery[m[33m)[m refactor: deploy settings
+* [1;34m|[m [33m7ab423b[m[33m ([m[1;33mtag: v0.1.0-discovery-deploy.2[m[33m)[m Merge pull request #42 from Bang210/discovery
+[1;35m|[m[1;34m\[m[1;34m|[m 
+[1;35m|[m * [33m35a1df8[m[33m ([m[1;33mtag: v0.0.42[m[33m)[m refactor: change domain
+[1;35m|[m[1;35m/[m  
+*   [33ma00fe1d[m[33m ([m[1;33mtag: v0.1.0-discovery-deploy.1[m[33m)[m Merge pull request #28 from Bang210/discovery
+[31m|[m[32m\[m  
+[31m|[m * [33mc0a9342[m[33m ([m[1;33mtag: v0.0.22[m[33m)[m work
+* [32m|[m [33mac584c5[m[33m ([m[1;33mtag: v0.1.0-discovery-deploy.0[m[33m)[m Merge pull request #27 from Bang210/discovery
+[33m|[m[32m\[m[32m|[m 
+[33m|[m * [33m0656a19[m feat: new setting
+* [34m|[m [33mbbf3c3d[m[33m ([m[1;33mtag: v0.0.22-discovery-deploy.0[m[33m)[m Merge pull request #26 from Bang210/discovery
+[35m|[m[34m\[m[34m|[m 
+[35m|[m * [33mc021c41[m[33m ([m[1;33mtag: v0.0.21[m[33m)[m work
+* [36m|[m [33me5b86ab[m[33m ([m[1;33mtag: v0.0.13-discovery-deploy.0[m[33m)[m Merge pull request #15 from Bang210/discovery
+[1;31m|[m[36m\[m[36m|[m 
+[1;31m|[m * [33m15d9e71[m[33m ([m[1;33mtag: v0.0.12[m[33m)[m fix: profile settings
+* [1;32m|[m [33m3778318[m[33m ([m[1;33mtag: v0.0.9[m[33m, [m[1;33mtag: v0.0.10-discovery-deploy.0[m[33m)[m Merge pull request #13 from Bang210/discovery
+[1;33m|[m[1;32m\[m[1;32m|[m 
+[1;33m|[m * [33mcf9a132[m fix: profiles
+* [1;34m|[m [33m55657d3[m[33m ([m[1;33mtag: v0.0.4-discovery-deploy.0[m[33m)[m Merge pull request #6 from Bang210/discovery
+[1;35m|[m[1;34m\[m[1;34m|[m 
+[1;35m|[m * [33me9ccde8[m[33m ([m[1;32mdiscovery[m[33m)[m fix: directory name
+* [1;36m|[m [33mcb897d7[m Merge pull request #5 from Bang210/discovery
+[31m|[m[1;36m\[m[1;36m|[m 
+[31m|[m * [33mc04a588[m fix: gitignore
+[31m|[m[31m/[m  
+* [33m3a3e774[m[33m ([m[1;33mtag: v0.0.3[m[33m, [m[1;32mdiscovery_deploy[m[33m)[m Create deploy_discovery_server.yml
+* [33m0466961[m Dockerfile
+* [33md44055b[m application settings
+* [33m037f170[m refactor: change prod settings
+* [33m276165d[m feat: application-prod
+* [33m552f8ef[m feat: add application settings
+* [33m1187771[m feat: add annotation for eureka server
+* [33ma8fa964[m feat: build.gradle
+* [33m4f7fcc3[m init discovery
+*   [33md59d3c6[m[33m ([m[1;33mtag: v0.4.0-gateway-deploy.4[m[33m, [m[1;31morigin/gateway_deploy[m[33m)[m Merge pull request #46 from Bang210/gateway
+[33m|[m[34m\[m  
+[33m|[m * [33me86372c[m[33m ([m[1;31morigin/gateway[m[33m)[m refactor: deploy settings
+[33m|[m [34m|[m * [33mcde5d38[m[33m ([m[1;31morigin/frontapp_homeServer[m[33m)[m refactor: packge.json
+[33m|[m [34m|[m * [33m4a51cf9[m refactor:api url
+[33m|[m [34m|[m * [33m7f26cb9[m remove legacy
+[33m|[m [34m|[m * [33m06cc633[m[33m ([m[1;33mtag: v0.0.48-frontapp-deploy.0[m[33m, [m[1;31morigin/frontapp_deploy[m[33m)[m work
+[33m|[m [34m|[m * [33ma5f4e7d[m[33m ([m[1;33mtag: v0.0.47[m[33m)[m style: change logo
+[33m|[m [34m|[m * [33m5ecc80a[m[33m ([m[1;33mtag: v0.0.34-frontapp-deploy.0[m[33m)[m refactor: gap between child keywords
+[33m|[m [34m|[m * [33m3c9cd0b[m[33m ([m[1;33mtag: v0.0.12-frontapp-deploy.0[m[33m, [m[1;33mtag: v0.0.11[m[33m)[m fix: url typo
+[33m|[m [34m|[m * [33mc9faeac[m[33m ([m[1;33mtag: v0.0.7-frontapp-deploy.0[m[33m)[m work
+[33m|[m [34m|[m * [33m1a99812[m[33m ([m[1;33mtag: v0.0.6[m[33m)[m work
+[33m|[m [34m|[m * [33m31a3a1f[m icon
+[33m|[m [34m|[m * [33m612eef7[m[33m ([m[1;33mtag: v0.0.3-frontapp-deploy.0[m[33m)[m fix: update workflow
+[33m|[m [34m|[m * [33m1fb297c[m[33m ([m[1;33mtag: v0.0.2-frontapp-deploy.0[m[33m)[m fix: update workflow
+[33m|[m [34m|[m * [33mde82c60[m fix: update workflow
+[33m|[m [34m|[m * [33m5705645[m fix: update workflow
+[33m|[m [34m|[m * [33meded2c8[m fix: update workflow
+[33m|[m [34m|[m * [33m754cbe3[m fix: add initial tag
+[33m|[m [34m|[m * [33mdcc2f2b[m fix: add initial tag
+[33m|[m [34m|[m * [33m6418a2f[m fix: workflow diretory
+[33m|[m [34m|[m * [33m82d81a2[m work
+[33m|[m [34m|[m * [33m534e470[m Create deploy_frontapp.yml
+[33m|[m [34m|[m * [33m432a826[m fix: conflict
+[33m|[m [34m|[m * [33m4c4d54e[m[33m ([m[1;31morigin/main[m[33m)[m Update README.md
+[33m|[m [34m|[m * [33m5f5a583[m Update README.md
+[33m|[m [34m|[m * [33m354cfc3[m Update README.md
+[33m|[m [34m|[m * [33m3d3dc61[m Update README.md
+[33m|[m [34m|[m * [33m24638e4[m Update README.md
+[33m|[m [34m|[m * [33mcee4c53[m Create README.md
+[33m|[m [34m|[m[33m/[m  
+[33m|[m[33m/[m[34m|[m   
+* [34m|[m [33m2ff5f0e[m[33m ([m[1;33mtag: v0.4.0-gateway-deploy.3[m[33m)[m Merge pull request #43 from Bang210/gateway
+[1;31m|[m[34m\[m[34m|[m 
+[1;31m|[m * [33m0285b55[m[33m ([m[1;33mtag: v0.0.43[m[33m)[m refactor: change domain
+[1;31m|[m[1;31m/[m  
+*   [33m8c205a8[m[33m ([m[1;33mtag: v0.4.0-gateway-deploy.2[m[33m)[m Merge pull request #36 from Bang210/gateway
+[1;33m|[m[1;34m\[m  
+[1;33m|[m * [33m06d268d[m[33m ([m[1;33mtag: v0.0.29[m[33m)[m work
+* [1;34m|[m [33m22e64df[m[33m ([m[1;33mtag: v0.4.0-gateway-deploy.1[m[33m)[m Merge pull request #33 from Bang210/gateway
+[1;35m|[m[1;34m\[m[1;34m|[m 
+[1;35m|[m * [33m22d7702[m work
+* [1;36m|[m [33me1defb7[m[33m ([m[1;33mtag: v0.4.0-gateway-deploy.0[m[33m)[m Merge pull request #32 from Bang210/gateway
+[31m|[m[1;36m\[m[1;36m|[m 
+[31m|[m * [33m3038023[m[33m ([m[1;33mtag: v0.0.26[m[33m)[m feat: config
+* [32m|[m [33mc82a792[m[33m ([m[1;33mtag: v0.3.0-gateway-deploy.3[m[33m)[m Merge pull request #29 from Bang210/gateway
+[33m|[m[32m\[m[32m|[m 
+[33m|[m * [33me5c7e31[m[33m ([m[1;33mtag: v0.0.23[m[33m)[m work
+* [34m|[m [33m1fdafdb[m[33m ([m[1;33mtag: v0.3.0-gateway-deploy.2[m[33m)[m Merge pull request #23 from Bang210/gateway
+[35m|[m[34m\[m[34m|[m 
+[35m|[m * [33me6ae7e7[m work
+* [36m|[m [33mf0a275b[m[33m ([m[1;33mtag: v0.3.0-gateway-deploy.1[m[33m)[m Merge pull request #22 from Bang210/gateway
+[1;31m|[m[36m\[m[36m|[m 
+[1;31m|[m * [33m529b951[m work
+* [1;32m|[m [33m6ea129e[m[33m ([m[1;33mtag: v0.3.0-gateway-deploy.0[m[33m)[m Merge pull request #21 from Bang210/gateway
+[1;33m|[m[1;32m\[m[1;32m|[m 
+[1;33m|[m * [33mab5ee05[m feat: add settings
+* [1;34m|[m [33m64ae944[m[33m ([m[1;33mtag: v0.2.0-gateway-deploy.0[m[33m)[m Merge pull request #20 from Bang210/gateway
+[1;35m|[m[1;34m\[m[1;34m|[m 
+[1;35m|[m * [33m3202919[m feat: prod logging
+* [1;36m|[m [33mb13692d[m[33m ([m[1;33mtag: v0.1.0-gateway-deploy.0[m[33m)[m Merge pull request #19 from Bang210/gateway
+[31m|[m[1;36m\[m[1;36m|[m 
+[31m|[m * [33m7fa2d15[m[33m ([m[1;33mtag: v0.0.017[m[33m)[m feat: add settings
+* [32m|[m [33m953cc68[m[33m ([m[1;33mtag: v0.0.16-gateway-deploy.0[m[33m)[m Merge pull request #18 from Bang210/gateway
+[33m|[m[32m\[m[32m|[m 
+[33m|[m * [33m499b37d[m[33m ([m[1;33mtag: v0.0.15[m[33m)[m feat: add profile settings
+* [34m|[m [33mc18c373[m[33m ([m[1;33mtag: v0.0.8-gateway-deploy.0[m[33m)[m Merge pull request #11 from Bang210/gateway
+[35m|[m[34m\[m[34m|[m 
+[35m|[m * [33m390b548[m[33m ([m[1;33mtag: v0.0.7[m[33m)[m fix: CORS settings
+* [36m|[m [33m908a754[m[33m ([m[1;33mtag: v0.0.6-gateway-deploy.0[m[33m)[m Merge pull request #10 from Bang210/gateway
+[1;31m|[m[36m\[m[36m|[m 
+[1;31m|[m * [33mb8473e3[m work
+[1;31m|[m[1;31m/[m  
+* [33mbecd2f0[m[33m ([m[1;33mtag: v0.0.5[m[33m)[m Dockerfile
+* [33m4a1b003[m create workflow
+* [33m5d29ffd[m application settings
+* [33m87592f2[m feat: resolve CORS errors
+* [33mcb403c1[m feat: add CORS settings
+* [33m4d80355[m feat: route settings
+* [33m9b01f84[m feat: create Logging Filter
+* [33m09a80c7[m feat: create Global Filter
+* [33mf3be5df[m init gateway
+*   [33m6c51908[m[33m ([m[1;33mtag: v0.0.47-keyword-deploy.0[m[33m, [m[1;31morigin/keyword_deploy[m[33m)[m Merge pull request #45 from Bang210/keyword
+[1;33m|[m[1;34m\[m  
+[1;33m|[m * [33me60a6fb[m[33m ([m[1;33mtag: v0.0.46[m[33m, [m[1;31morigin/keyword[m[33m)[m refactor: change domain
+[1;33m|[m[1;33m/[m  
+*   [33m0fbe298[m[33m ([m[1;33mtag: v0.0.42-keyword-deploy.0[m[33m)[m Merge pull request #41 from Bang210/keyword
+[1;35m|[m[1;36m\[m  
+[1;35m|[m * [33m6b0c807[m[33m ([m[1;33mtag: v0.0.41[m[33m)[m refactor: reduce loading time
+[1;35m|[m * [33m57abc75[m update: add meaningless words
+[1;35m|[m[1;35m/[m  
+*   [33m7b45d84[m[33m ([m[1;33mtag: v0.0.31-keyword-deploy.0[m[33m)[m Merge pull request #37 from Bang210/keyword
+[31m|[m[32m\[m  
+[31m|[m * [33m7cff6dd[m[33m ([m[1;33mtag: v0.0.30[m[33m)[m work
+* [32m|[m [33meb2577f[m[33m ([m[1;33mtag: v0.0.28-keyword-deploy.0[m[33m)[m Merge pull request #34 from Bang210/keyword
+[33m|[m[32m\[m[32m|[m 
+[33m|[m * [33m4f68929[m[33m ([m[1;33mtag: v0.0.27[m[33m)[m work
+* [34m|[m [33m607baca[m[33m ([m[1;33mtag: v0.0.25-keyword-deploy.0[m[33m)[m Merge pull request #30 from Bang210/keyword
+[35m|[m[34m\[m[34m|[m 
+[35m|[m * [33ma9a37a5[m[33m ([m[1;33mtag: v0.0.24[m[33m)[m work
+* [36m|[m [33ma945a73[m[33m ([m[1;33mtag: v0.0.20-keyword-deploy.0[m[33m)[m Merge pull request #25 from Bang210/keyword
+[1;31m|[m[36m\[m[36m|[m 
+[1;31m|[m * [33mea18add[m[33m ([m[1;33mtag: v0.0.19[m[33m)[m work
+* [1;32m|[m [33m8057cef[m[33m ([m[1;33mtag: v0.0.15-keyword-deploy.0[m[33m)[m Merge pull request #17 from Bang210/keyword
+[1;33m|[m[1;32m\[m[1;32m|[m 
+[1;33m|[m * [33m8108eeb[m[33m ([m[1;33mtag: v0.0.14[m[33m)[m fix: profile settings
+[1;33m|[m[1;33m/[m  
+*   [33m06b9925[m[33m ([m[1;33mtag: v0.0.9-keyword-deploy.0[m[33m, [m[1;33mtag: v0.0.8[m[33m)[m Merge pull request #12 from Bang210/keyword
+[1;35m|[m[1;36m\[m  
+[1;35m|[m * [33mfb3146b[m fix: profiles
+* [1;36m|[m [33mf186b1d[m[33m ([m[1;33mtag: v0.0.5-keyword-deploy.1[m[33m)[m Merge pull request #9 from Bang210/keyword
+[31m|[m[1;36m\[m[1;36m|[m 
+[31m|[m * [33m30ac169[m update: build.gradle
+* [32m|[m [33m9af3387[m[33m ([m[1;33mtag: v0.0.5-keyword-deploy.0[m[33m)[m Merge pull request #8 from Bang210/keyword
+[33m|[m[32m\[m[32m|[m 
+[33m|[m * [33m1d06e93[m work
+* [34m|[m [33m28bd2cc[m Merge pull request #7 from Bang210/keyword
+[35m|[m[34m\[m[34m|[m 
+[35m|[m * [33m5bdbcee[m[33m ([m[1;33mtag: v0.0.4[m[33m)[m work
+[35m|[m[35m/[m  
+* [33m822828d[m Dockerfile
+* [33m3cebecd[m create workflow
+* [33m48e70a7[m application settings
+* [33m00c6949[m application settings
+* [33m0b0c380[m feat: childKeyword
+* [33m7593919[m feat: childKeyword CRUD
+* [33mbbb468e[m feat: create childKeyword Service
+* [33m8492ef9[m feat: create childKeyword Repository
+* [33mc03bdbc[m feat: create childKeyword
+* [33m0645d46[m feat: add meaningless word
+* [33m469214e[m feat: resolve CORS error
+* [33m735a3fa[m feat: add annotation
+* [33m1a524fb[m feat: CORS settings
+* [33m2935af4[m feat: data response
+* [33m8e48386[m feat: create response entity
+* [33mc43bfc5[m feat: scheduledService
