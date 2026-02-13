@@ -3,6 +3,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: https://discovery.jinsol.my/eureka
+      defaultZone: https://bangvelope.com/newskit-discovery/eureka
   instance:
     prefer-ip-address: true
