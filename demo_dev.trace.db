@@ -1,0 +1,6 @@
+2026-02-13 17:29:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MOTHER_KEYWORD" not found; SQL statement:
+select * from mother_keyword [42102-214]
+2026-02-13 17:29:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]MOTHER_KEYWORD"; expected "MERGE"; SQL statement:
+MOTHER_KEYWORD [42001-214]
