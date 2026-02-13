@@ -9,7 +9,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: https://discovery.jinsol.my/eureka/
+      defaultZone: https://bangvelope.com/newskit-discovery/eureka
   server:
     enable-self-preservation: true
 
